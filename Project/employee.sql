@@ -12,12 +12,12 @@ create table Employee(
 insert into Employee ( employee_id, first_name, last_name) 
 values (100, 'mike', 'victor');
 insert into Employee ( employee_id, first_name, last_name) 
-values (100, 'mark', 'johnson');
+values (1001, 'mark', 'johnson');
 insert into Employee ( employee_id, first_name, last_name) 
-values (100, 'jone', 'brian');
+values (1002, 'jone', 'brian');
 insert into Employee ( employee_id, first_name, last_name) 
-values (100, 'akhigbe', 'johnson');
+values (1003, 'akhigbe', 'johnson');
 insert into Employee ( employee_id, first_name, last_name) 
-values (100, 'lovely', 'ruth');
+values (1004, 'lovely', 'ruth');
 
 
