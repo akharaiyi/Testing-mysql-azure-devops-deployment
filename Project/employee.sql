@@ -1,5 +1,5 @@
 
-DROP DATABASE  IF EXISTS worker;
+drop database if exists worker;
 /**  create employee database  **/
 create database worker;
 use worker;
@@ -20,5 +20,8 @@ insert into Employee ( employee_id, first_name, last_name)
 values (1003, 'akhigbe', 'johnson');
 insert into Employee ( employee_id, first_name, last_name) 
 values (1004, 'lovely', 'ruth');
+
+/** query from te database **/
+select * from Employee;
 
 
