@@ -1,4 +1,5 @@
-drop worker;
+
+DROP DATABASE  IF EXISTS worker;
 /**  create employee database  **/
 create database worker;
 use worker;
