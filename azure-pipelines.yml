@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    ls -R
+    ls -ltr
+    pwd 
+  displayName: 'Run a multi-line script'
+
+- task: MysqlDeploymentOnMachineGroup@1
+  inputs:
+    TaskNameSelector: 'SqlTaskFile'
+    SqlFile: 'Project/employee.sql'
+    ServerName: '$(hostname)'
+    SqlUsername: 'akhigbe'
+    SqlPassword: '$(password)'
